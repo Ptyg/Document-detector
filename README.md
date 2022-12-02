@@ -13,9 +13,10 @@
     A scanner, to find and crop documents from image
     <br />
     <br />
-    
+    <a href="https://github.com/Ptyg/Document-detector/tree/master/Document_detector/src">Code</a>
+    |
     <a href="https://github.com/Ptyg/Document-detector/issues">Report Bug</a>
-    ·
+    |
     <a href="https://github.com/Ptyg/Document-detector/pulls">Request Feature</a>
   </p>
 </div>
