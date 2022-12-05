@@ -74,38 +74,25 @@ You need to have:
 
 * Cmake: https://cmake.org/download/
 
-* Visual Studio community: https://visualstudio.microsoft.com/vs/community/
+* Visual Studio: https://visualstudio.microsoft.com/vs/community/
 
 * Vcpkg: https://vcpkg.io/en/getting-started.html?platform=windows
 
 ### Installation
 
-1. Install VCPKG packages
+1. Create an empty directory wherever you want. It`s for repo cloning.
 
-    1.1 Go to the `VCPKG` directory on your PC
-    
-    1.2 Run
-   ```sh
-   # Command explanation
-   # ./vcpkg install {package_name}:{bit_vesrion}-{platform}
-
-   ./vcpkg install qt5-base:x64-windows
-   ./vcpkg install opencv4:x64-windows
-   ```
-
-2. Create an empty directory wherever you want. It`s for repo cloning.
-
-3. Clone the repo
+2. Clone the repo
    ```sh
    git clone https://github.com/Ptyg/Document-detector.git
    ```
-4. Open directory with cloned project in console
+3. Open directory with cloned project in console
     
-    4.1 Create a `build` directory
+    3.1 Create a `build` directory
     
-    4.2 Go there
+    3.2 Go there
 
-    4.3 Write command
+    3.3 Write command
     ```sh
     # example:
     # cmake .. -DCMAKE_TOOLCHAIN_FILE="C:/vcpkg/scripts/buildsystems/vcpkg.cmake"
@@ -113,10 +100,10 @@ You need to have:
     cmake .. -DCMAKE_TOOLCHAIN_FILE="{ path/to/cmake }"
     ```
 
-5. In `build` directory open `.sln` file using Visual Studio
-6. Set second project as a startup. (It`ll have name like _Document_detector_)
-7. Choose the `Release` mode (or `Debug` if you want to)
-8. Press the green triangle and run the app
+4. In `build` directory open `.sln` file using Visual Studio
+5. Set second project as a startup. (It`ll have name like _Document_detector_)
+6. Choose the `Release` mode (or `Debug` if you want to)
+7. Press the green triangle and run the app
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
