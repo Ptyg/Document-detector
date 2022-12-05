@@ -1,0 +1,9 @@
+{
+  "name": "project-pkgs",
+  "version-string": "1.0.0",
+  "license": "MIT",
+  "dependencies": [
+    "qt5-base",
+    "opencv4"
+  ]
+}
