@@ -1,10 +1,7 @@
 ﻿cmake_minimum_required (VERSION 3.8)
 
-set( CMAKE_AUTOMOC ON )
-set( CMAKE_AUTOUIC ON )
-
 # setup libs 
-find_package( OpenCV CONFIG REQUIRED )
+find_package( OpenCV REQUIRED )
 
 find_package( Qt5 REQUIRED COMPONENTS
     Core
