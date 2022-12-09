@@ -43,7 +43,7 @@
       }
     },
     {
-      "name": "windows-vs-msvc-all-build-types",
+      "name": "windows-vs_gen-msvc-all-build-types",
       "displayName": "vs_gen | msvc | all_build_types",
       "description": "Windows with the msvc compiler, debug & release build type",
       "inherits": "windows-base",
