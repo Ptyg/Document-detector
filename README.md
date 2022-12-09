@@ -74,37 +74,43 @@ You need to have:
 
 * Cmake: https://cmake.org/download/
 
-* Visual Studio: https://visualstudio.microsoft.com/vs/community/
-
 * Vcpkg: https://vcpkg.io/en/getting-started.html?platform=windows
+
+And next system envs:
+* VCPKG_ROOT - `{ path/to/vcpkg/dir }`
+* PATH - `{ path/to/cmake/bin }`
 
 ### Installation
 
 1. Create an empty directory wherever you want. It`s for repo cloning.
 
-2. Clone the repo
+2. Clone the repo.
    ```sh
    git clone https://github.com/Ptyg/Document-detector.git
    ```
-3. Open directory with cloned project in console
+3. Open directory with cloned project in console.
     
-    3.1 Create a `build` directory
-    
-    3.2 Go there
-
-    3.3 Write command
+    3.1 Type ... 
     ```sh
-    # example:
-    # cmake .. -DCMAKE_TOOLCHAIN_FILE="C:/vcpkg/scripts/buildsystems/vcpkg.cmake"
-
-    cmake .. -DCMAKE_TOOLCHAIN_FILE="{ path/to/cmake }"
+    cmake --list-presets
     ```
 
-4. In `build` directory open `.sln` file using Visual Studio
-5. Set second project as a startup. (It`ll have name like _Document_detector_)
-6. Choose the `Release` mode (or `Debug` if you want to)
-7. Press the green triangle and run the app
+    ... to see all available presets. It is gonna looks like ...
+    
+    ```sh
+    "preset_name#1" - preset_display_name#1
+    "preset_name#2" - preset_display_name#2
+    "preset_name#3" - preset_display_name#3 
+    ...
+    ```
+    3.2 Choose a preset and type ...
+    ```sh
+    cmake --preset preset_name#1 (or cmake --preset preset_name#2, etc)
+    ```
 
+    3.3 Wait until project generation is done. It will locate at `./out/build/{ preset_name }`
+
+__At the moment, only Visual Studio IDE is supported.__
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Usage
