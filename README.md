@@ -117,7 +117,7 @@ __At the moment, only Visual Studio IDE is supported.__
 
 - After launch, you`ll see a window like this
 
-![main_window](images/main.jpg)
+![main_window](images/main.JPG)
 
 - Choose an image with you document
 
@@ -125,7 +125,7 @@ __At the moment, only Visual Studio IDE is supported.__
 
 - And click on `crop image` button 
 
-![result](images/result.jpg)
+![result](images/result.JPG)
 
 Now you can  save the result or try to 'crop' another image.
 
