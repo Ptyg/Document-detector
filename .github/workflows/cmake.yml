@@ -12,11 +12,15 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+      with:
+        submodules: true
 
     - uses: lukka/get-cmake@latest
 
     - uses: lukka/run-vcpkg@v10
+      id: runvcpkg
     
     - uses: lukka/run-cmake@v10
+      id: runcmake
       with:
         configurePreset: 'windows-vs_gen-msvc-release'
