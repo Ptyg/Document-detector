@@ -16,7 +16,7 @@
         "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}",
         "CMAKE_TOOLCHAIN_FILE": {
           "type": "FILEPATH",
-          "value": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake"
+          "value": "${sourceDir}/vcpkg/scripts/buildsystems/vcpkg.cmake"
         }
       },
       "environment": {
@@ -43,16 +43,17 @@
       }
     },
     {
-      "name": "windows-vs_gen-msvc-all-build-types",
-      "displayName": "vs_gen | msvc | all_build_types",
-      "description": "Windows with the msvc compiler, debug & release build type",
+      "name": "windows-vs_gen-msvc-release",
+      "displayName": "vs_gen | msvc | release",
+      "description": "Windows with the msvc compiler, release build type",
       "inherits": "windows-base",
       "generator": "Visual Studio 17 2022",
       "cacheVariables": {
         "CMAKE_C_COMPILER": "cl",
         "CMAKE_CXX_COMPILER": "cl",
-        "VCPKG_TARGET_TRIPLET": "x64-windows",
-        "CMAKE_BUILD_TYPE": "Release"
+        "CMAKE_BUILD_TYPE": "Release",
+        "VCPKG_OVERLAY_TRIPLETS": "${sourceDir}/custom_triplets",
+        "VCPKG_TARGET_TRIPLET": "x64-windows-rel"
       }
     }
   ]
