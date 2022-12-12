@@ -10,17 +10,12 @@ jobs:
   build:
     runs-on: windows-latest
 
-    steps:
-    - uses: actions/checkout@v3
-      with:
-        submodules: true
-
+    steps:    
+    - name: Clone repo
+      run: git clone -b dev --recursive -j8 https://github.com/Ptyg/Document-detector.git C:\Document-detector
+      
     - uses: lukka/get-cmake@latest
-
-    - uses: lukka/run-vcpkg@v10
-      id: runvcpkg
-    
-    - uses: lukka/run-cmake@v10
-      id: runcmake
-      with:
-        configurePreset: 'windows-vs_gen-msvc-release'
+      
+    - name: Run gen
+      working-directory: C:\Document-detector
+      run: cmake --preset windows-vs_gen-msvc-release
