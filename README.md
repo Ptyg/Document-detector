@@ -81,11 +81,10 @@ You need to have:
 
 * Cmake: https://cmake.org/download/
 
-* Vcpkg: https://vcpkg.io/en/getting-started.html?platform=windows
-
 And next system envs:
-* VCPKG_ROOT - `{ path/to/vcpkg/dir }`
-* PATH - `{ path/to/cmake/bin }`
+* [ _not necessary_ ] VCPKG_ROOT - `{ path/to/vcpkg/dir/in/repo }`
+* [ _to run cmake commands_ ] PATH - `{ path/to/cmake/bin }`
+* [ _important_ ] PATH - `{ path/to/msvc/compiler }`
 
 ### Installation
 
@@ -117,7 +116,6 @@ And next system envs:
 
     3.3 Wait until project generation is done. It will locate at `./out/build/{ preset_name }`
 
-__At the moment, only Visual Studio IDE is supported.__
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Usage
