@@ -21,6 +21,12 @@
   </p>
 </div>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Visual%20Studio-5C2D91.svg?style=flat&logo=visual-studio&logoColor=white">
+  <img src="https://github.com/Ptyg/Document-detector/actions/workflows/cmake.yml/badge.svg?branch=dev">
+  <img src="https://img.shields.io/badge/Windows-0078D6?style=flat&logo=windows&logoColor=white">
+</p>
+
 <details>
   <summary>Table of Contents</summary>
   <ol>
@@ -61,6 +67,7 @@ get "cropped" version of it, like we printed it on a paper. **_And all for free_
 * [![C++][cpp-shield]][cpp-url]
 * [![OpenCV][opencv-shield]][opencv-url]
 * [![Qt][qt-shield]][qt-url]
+* [![Cmake][cmake-shield]][cmake-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -175,3 +182,7 @@ Project Link: [https://github.com/Ptyg/Document-detector](https://github.com/Pty
 
 [qt-shield]: https://img.shields.io/static/v1?&message=v%205.15.6&color=19af4d&logo=Qt&logoColor=41CD12&label=Qt
 [qt-url]: https://www.qt.io/
+
+[cmake-shield]: https://img.shields.io/static/v1?message=v%203.25.1&color=7d8580&logo=cmake&logoColor=7d8580&label=Cmake
+[cmake-url]: https://cmake.org/
+
