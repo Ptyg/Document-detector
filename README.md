@@ -23,7 +23,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Visual%20Studio-5C2D91.svg?style=flat&logo=visual-studio&logoColor=white">
-  <img src="https://github.com/Ptyg/Document-detector/actions/workflows/cmake.yml/badge.svg?branch=dev">
+  <img src="https://github.com/Ptyg/Document-detector/actions/workflows/cmake.yml/badge.svg">
   <img src="https://img.shields.io/badge/Windows-0078D6?style=flat&logo=windows&logoColor=white">
 </p>
 
